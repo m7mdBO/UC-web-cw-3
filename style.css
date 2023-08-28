@@ -1,0 +1,36 @@
+h1{
+    font-family: monospace;
+    color: orange;
+}
+.container{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: teal;
+    margin: 1px;
+    border-radius: 10px;
+    transition: all 0.5;
+    border: 2px solid darkkhaki;
+    box-shadow: 0 5px 12px rgb(0, 0, 0,0.5);
+}
+.box:hover {
+    
+    animation: chang 1s infinite;
+}
+@keyframes chang{
+    0%{background-color: teal;}
+    100%{background-color: turquoise;}
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
